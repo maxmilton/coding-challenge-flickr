@@ -14,7 +14,7 @@ You can see a working demo at <https://MaxMilton.github.io/coding-challenge-flic
 
 _NOTE: Most of this project was hand coded from scratch (other than eternal packages, obviously)._
 
-### Steps taken for build the app
+### Steps taken to build the app
 
 As per the Original challenge outline, the steps I took to build the app were:
 
@@ -49,7 +49,9 @@ As per the Original challenge outline, the steps I took to build the app were:
 1. Minor refactor of helper function in PhotoItem component, put it in an eternal file for better "separation of concerns" and easier testing.
 1. Write remaining tests for 100% code coverage.
 1. While writing tests I discovered the JSONP package I choose before was very difficult to unit test with. After some research and experimentation I decided to rewrite the fetch logic using a new library `jsonp`. The library had some issues preventing easy use so in the end I included a modified version of the script directly in this project. In a real app I would create a new package and publish it to NPM.
+1. Tweak the documentation; readme, component comments, etc.
 1. Create a new Github repo and sync my local code.
+1. Set up github page to host the [app demo](https://MaxMilton.github.io/coding-challenge-flickr/).
 1. Decide if this needs server side rendering (SSR) — no, the DOM is simple and there's no requirement for SEO. Simple SSR is not difficult to implement but for this prototype I'll opt for more readable build tooling code. Will leave the app as is.
 
 **Additional considerations:**
@@ -69,7 +71,7 @@ The other than the `src` directory there are:
 | --- | --- |
 | `/docs` | A copy of the compiled files from `/dist`. Required for Github pages to server the app demo. |
 | `/static` | Contains static files which are copied into `/dist` at build time. |
-| `/src/__mock__` | Manual mocks for unit tests. |
+| `/src/__mocks__` | Manual mocks for unit tests. |
 | `/test` | All unit tests. |
 | `/test/coverage` | Automatically generated during tests when collecting test code coverage. |
 
