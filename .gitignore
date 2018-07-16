@@ -1,0 +1,6 @@
+*.log
+dist/
+node_modules/
+package-lock.json*
+test/coverage/
+.stylelintcache

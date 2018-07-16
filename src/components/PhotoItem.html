@@ -1,0 +1,88 @@
+<!--
+  PHOTO ITEM COMPONENT
+-->
+
+<a href="{link}" class="photo-item" rel="noopener" target="_blank">
+  <div class="photo-wrapper">
+    <img src="{media.m}" class="photo" alt="{title}">
+  </div>
+  <div class="photo-info">
+    <div class="photo-author">Author: {getUserName(author)}</div>
+    <div class="photo-tags">Tags: {tags}</div>
+  </div>
+  <div class="photo-link"><i class="icon-link"></i> See on Flickr</div>
+</a>
+
+<script>
+  import { getUserName } from '../helpers.js';
+
+  export default {
+    helpers: {
+      getUserName,
+    },
+  };
+</script>
+
+<style>
+  .photo-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: var(--dark-gray1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .photo-wrapper {
+    overflow: hidden;
+  }
+
+  .photo {
+    width: 100%;
+    transition: transform 600ms ease;
+    will-change: transition;
+  }
+
+  .photo-item:hover > .photo-wrapper > .photo {
+    transform: scale(1.1);
+  }
+
+  .photo-info {
+    max-height: 10em;
+    padding: 0.5em 1em 1em;
+    overflow-y: auto;
+    color: var(--light-gray5);
+    word-break: break-all;
+  }
+
+  .photo-author {
+    padding-bottom: 0.2em;
+  }
+
+  .photo-item:hover {
+    text-decoration: none;
+  }
+
+  .photo-link {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    color: var(--blue5);
+    border-top: 1px solid var(--dark-gray3);
+  }
+
+  .photo-item:hover > .photo-link {
+    text-decoration: underline;
+  }
+
+  .icon-link {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.3em;
+    /**
+     * XXX: Optimised and encoded SVG the same as I outline here:
+     * https://github.com/WeAreGenki/minna-ui/blob/master/css/src/images/diagonal.svg?short_path=d4bb6ba
+     */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='%233f95cc' d='M10 16l2 1 5-5-5-5-2 1 3 3H3v2h10l-3 3zm9-13H5L3 5v4h2V5h14v14H5v-4H3v4l2 2h14l2-2V5l-2-2z'/%3E%3C/svg%3E");
+  }
+</style>
