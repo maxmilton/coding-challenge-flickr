@@ -1,3 +1,6 @@
+// XXX: Fetching data over the network is a bad idea for unit test because networks
+// can be unreliable. This mock makes the jsonp function data reproducible.
+
 /* global jest */
 
 const response = {

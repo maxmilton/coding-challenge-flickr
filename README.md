@@ -8,7 +8,7 @@
 
 My submission for a developer coding challenge.
 
-You can see a working demo at <CHANGEME>.
+You can see a working demo at <http://MaxMilton.github.io/coding-challenge-flickr/>.
 
 ## Overview
 
@@ -63,12 +63,14 @@ As per the Original challenge outline, the steps I took to build the app were:
 
 ### Directory structure
 
-The other than the variant directories there are:
+The other than the `src` directory there are:
 
 | Path | Description |
 | --- | --- |
 | `/static` | Contains static files which are copied into `/dist` at build time. |
-| `/coverage` | Automatically generated during tests when collecting test code coverage. |
+| `/src/__mock__` | Manual mocks for unit tests. |
+| `/test` | All unit tests. |
+| `/test/coverage` | Automatically generated during tests when collecting test code coverage. |
 
 ## Instructions
 
