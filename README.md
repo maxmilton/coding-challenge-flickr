@@ -8,7 +8,7 @@
 
 My submission for a developer coding challenge.
 
-You can see a working demo at <http://MaxMilton.github.io/coding-challenge-flickr/>.
+You can see a working demo at <https://MaxMilton.github.io/coding-challenge-flickr/>.
 
 ## Overview
 
