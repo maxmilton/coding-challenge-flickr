@@ -18,8 +18,9 @@
     "baseUrl": "."
   },
   "exclude": [
-    "coverage",
+    "test/coverage",
     "dist",
+    "docs",
     "node_modules",
     "static"
   ],

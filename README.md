@@ -67,6 +67,7 @@ The other than the `src` directory there are:
 
 | Path | Description |
 | --- | --- |
+| `/docs` | A copy of the compiled files from `/dist`. Required for Github pages to server the app demo. |
 | `/static` | Contains static files which are copied into `/dist` at build time. |
 | `/src/__mock__` | Manual mocks for unit tests. |
 | `/test` | All unit tests. |
