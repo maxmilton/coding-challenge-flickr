@@ -17,7 +17,7 @@
     "css:minify": "cleancss -o dist/bundle.css dist/bundle.css",
     "clean": "lerna clean --yes",
     "lint:css": "stylelint **/*.{html,css} --cache",
-    "lint:js": "eslint --ignore-path .gitignore --ext .js,.html .",
+    "lint:js": "eslint --ignore-path .gitignore --ignore-pattern docs --ext .js,.html .",
     "lint": "yarn lint:css && yarn lint:js",
     "test": "yarn lint && jest --coverage",
     "test-ci": "jest --runInBand --ci --verbose --coverage"
