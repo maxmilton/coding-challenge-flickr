@@ -10,6 +10,10 @@ My submission for a developer coding challenge.
 
 You can see a working demo at <https://MaxMilton.github.io/coding-challenge-flickr/>.
 
+<p align="center">
+ <a href="https://MaxMilton.github.io/coding-challenge-flickr/"><img src="screenshot.jpg" width="480" alt="Coding Challenge Flickr"></a>
+</p>
+
 ## Overview
 
 _NOTE: Most of this project was hand coded from scratch (other than eternal packages, obviously)._
