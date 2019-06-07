@@ -28,7 +28,7 @@
   "devDependencies": {
     "@minna-ui/eslint-config": "0.9.0",
     "@minna-ui/jest-config": "0.9.1",
-    "@minna-ui/stylelint-config": "0.9.0",
+    "@minna-ui/stylelint-config": "0.17.0",
     "autoprefixer": "9.0.0",
     "clean-css-cli": "4.1.11",
     "codecov": "3.0.4",
