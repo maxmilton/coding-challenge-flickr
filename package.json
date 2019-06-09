@@ -30,7 +30,7 @@
     "@minna-ui/jest-config": "0.9.1",
     "@minna-ui/stylelint-config": "0.9.0",
     "autoprefixer": "9.0.0",
-    "clean-css-cli": "4.1.11",
+    "clean-css-cli": "4.3.0",
     "codecov": "3.0.4",
     "cross-env": "5.2.0",
     "eslint": "4.19.1",
